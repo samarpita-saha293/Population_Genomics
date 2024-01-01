@@ -1,3 +1,6 @@
+#!/bin/bash
+
+### Script to change chromosome naming ###
 
 # Mentioning Input and output file names
 input_file="input_file.vcf"
