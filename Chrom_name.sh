@@ -1,5 +1,5 @@
 
-# Input and output file names
+# Mentioning Input and output file names
 input_file="input_file.vcf"
 output_file="output_file.vcf"
 
@@ -38,7 +38,7 @@ for old_chromosome in "${!chromosome_mapping[@]}"; do
     sed_expr+="s/$old_chromosome/$new_chromosome/g;"
 done
 
-# Use sed to perform the replacement
+# Using sed to perform the replacement
 sed "$sed_expr" "$input_file" > "$output_file"
 
 echo "Conversion complete. Output written to $output_file"
